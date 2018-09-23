@@ -1,0 +1,10 @@
+﻿@inject ExploreCaliWebApp.Models.FormattingService Format
+@model ExploreCaliWebApp.Models.Post
+
+<article id="blog-post">
+    <h1>@Model.Title</h1>
+    <div class="details">
+        Posted <span>@Format.AsReadableDate(Model.Posted)</span> by <span> @Model.Author</span>
+    </div>
+    <div class="content"> @Model.Body</div>
+</article>
