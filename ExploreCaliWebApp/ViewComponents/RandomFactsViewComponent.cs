@@ -11,14 +11,16 @@ namespace ExploreCaliWebApp.ViewComponents
     {
         private readonly RandomFactsDataContext _facts;
 
-        public RandomFactsViewComponent(RandomFactsDataContext randomFacts)
-        {
-            _facts = randomFacts;
-        }
-        public IViewComponentResult Invoke()
-        {
-            var facts = _facts.GetRandomFacts();
-            return View(facts);
-        }
+      //  public RandomFactsViewComponent(RandomFactsDataContext randomFacts)
+      //  {
+        //    _facts = randomFacts;
+        //}
     
+      //  public IViewComponentResult Invoke()
+        //{
+          //  var facts = _facts.GetRandomFacts();
+            //return View(facts);
+        //}
+
+    }
 }
